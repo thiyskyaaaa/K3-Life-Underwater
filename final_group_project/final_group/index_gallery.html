@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style_gallery.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .caption{
+        display: none;
+      }
+      .vertical-strip {
+        position: fixed;
+        top: 12%;
+        left: 0;
+        width: 15%;
+        height: 71.5%;
+        background-color: darkblue;
+      }
+    </style>
+  </head>
+  <body>
+        
+    <nav>
+      <label class="logo"><img src="logo1.png" alt="logo" width="300" height="100"> </label>     
+      <ul class="navlist">
+        <li> <a class="active" href="homepage.html">HOME</a></li>
+        <li> <a  href="index_gallery.html" >GALLERY</a></li>
+        <li> <a  href="shop.html" >SHOP</a></li>
+        <li> <a  href="user_profile.html" >USER PROFILE</a></li>
+        <li> <a  href="feedback.html" >FEEDBACK</a></li>
+        <li> <a  href="index_sitemap.html">SITEMAP</a></li>
+        <li> <a  href="team.html" >TEAM</a></li>
+      </ul>
+  </nav>
+
+    <div class="vertical-strip">
+      <span style="color: lightblue; font-size: 25px; font-weight: bold;">Colour Themes</span><br><br>
+      <div id="themeBtns">
+        <button id="lightBtn" onclick="lightTheme()" class="theme-btn" value="light">Light Theme</button><br><br>
+        <button id = "darkBtn"  onclick="darkTheme()" class="theme-btn" value="dark">Dark Theme</button><br><br>
+        <button id = "greenBtn" onclick="greenTheme()" class="theme-btn" value="green">Green Theme</button><br><br>
+        <button id="customBtn" onclick="customTheme()" class="theme-btn">Custom Themes</button>
+      </div>
+
+      <div id="fontFam">
+        <span style="color: lightblue; font-size: 25px; font-weight: bold;">Font Types</span><br><br>
+        <select id="fontSelect">
+          <option value="Arial">Arial</option>
+          <option value="Verdana">Verdana</option>
+          <option value="Times New Roman">Times New Roman</option>
+          <option value="Courier New">Courier New</option>
+          <option value="Georgia">Georgia</option>          
+          <option value="Helvetica">Helvetica</option>
+      </select>
+
+      </div>
+    </div>
+
+    <div class="closeButton" id="close">
+      <span>X</span>
+    </div>
+    <div class="image-container">
+      <span style="--i: 1">
+        <img src="img1.jpg" alt="Work-Life Balance" />
+          <span class="caption">
+            Achieving a healthy work-life balance is essential for managing stress, preventing burnout, and promoting overall well-being.
+            Balancing professional responsibilities with personal interests and relationships helps maintain physical and mental health, fosters productivity, and enhances overall quality of life.
+          </span>
+      </span>
+      <span style="--i: 2">
+        <img src="img2.jpg" alt="Social support and Community" />
+          <span class="caption">
+            Building strong social connections and networks can greatly contribute to overall well-being.
+            Engaging with friends, family, and community groups can provide emotional support, reduce feelings of isolation, and promote a sense of belonging.
+          </span>
+      </span>
+      <span style="--i: 3">
+        <img src="img3.jpg" alt="Exercise and Fitness" />
+          <span class="caption">
+            Regular physical activity is essential for maintaining physical and mental health. 
+            Exercise helps reduce the risk of chronic diseases, improves mood, boosts energy levels, and enhances overall quality of life.
+          </span>
+      </span>
+      <span style="--i: 4">
+        <img src="img4.jpg" alt="Mental Health and Relaxation" />
+          <span class="caption">
+            Taking time to prioritize mental health and relaxation is crucial for managing stress and maintaining well-being. 
+            Practices such as mindfulness, meditation, and deep breathing can help reduce anxiety, improve sleep, and promote emotional balance.
+          </span>
+      </span>
+      <span style="--i: 5">
+        <img src="img5.jpg" alt="Medical care and Patient Support" />
+          <span class="caption">
+            Access to quality medical care and patient support services is vital for addressing health needs and promoting recovery. 
+            Comprehensive healthcare services, along with patient education and advocacy, play a key role in ensuring optimal health outcomes.
+          </span>
+      </span>
+      <span style="--i: 6">
+        <img src="img6.jpg" alt="Vaccination and Immunization" />
+          <span class="caption">
+            Vaccination and immunization are essential for preventing the spread of infectious diseases and protecting individuals and communities from serious health risks. 
+            Immunization programs help build immunity against a wide range of diseases, saving lives and reducing healthcare costs.
+          </span>
+      </span>
+      <span style="--i: 7">
+        <img src="img7.jpg" alt="Healthy Diet"/>
+          <span class="caption">
+            Maintaining a balanced and nutritious diet is fundamental for supporting overall health and well-being. 
+            Consuming a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats provides essential nutrients, promotes optimal body function, and reduces the risk of chronic diseases.
+          </span>
+      </span>
+      <span style="--i: 8">
+        <img src="img8.jpg" alt="Digital Health and Technology" />
+          <span class="caption">
+            The use of digital health technologies, such as telemedicine, mobile health apps, and wearable devices, is revolutionizing healthcare delivery and empowering individuals to take control of their health. 
+            These technologies improve access to care, enhance patient engagement, and facilitate remote monitoring and management of health conditions.
+          </span>
+      </span>
+    </div>
+
+    <div class="btn-container">
+      <button class="btn" id="prev">&lt;</button>
+      <button class="btn" id="next">&gt;</button>
+    </div>
+    
+    <footer>
+      <div class="footer1">
+        <div class="footer-content">
+          <div class="we">
+          <sub> WE ARE:</sub> <br>
+          <a href="yathupage.html">Yathusiga Sivakanthan</a><br>
+          <a href="page_editor_Kemsara.html">Kemsara Pathirana</a><br>
+          <a href="linupage.html">Linushankaran Janarththanan</a><br>
+          <a href="page_editor_Sanjula.html">Sanjula Rathnamalala</a><br>
+          </div>
+         </div>
+         <div class="footer-content">
+          <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-google"></i>
+            <i class="fa fa-skype"></i>            
+         </div>
+         </div>
+         <div class="footer-content">
+          <div class="contentlinks">
+          <a href="https://www.globalgoals.org/terms-conditions/" >Terms & Conditions</a><br>
+          <a href="https://www.globalgoals.org/privacy-policy/" >Privacy Policy</a><br>
+          <a href="https://www.globalgoals.org/cookies/">Cookies</a><br>
+          <a href="https://www.globalgoals.org/anti-corruption/">Anti-Corruption</a><br>
+          <a href="https://www.globalgoals.org/asset-licence/">Asset Licence</a>
+         </div>
+        </div>   
+      </div>
+    </footer>
+
+
+    <script src="app_gallery.js"></script>
+  </body>
+</html>

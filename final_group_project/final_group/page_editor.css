@@ -1,0 +1,26 @@
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 120px;
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    background-image: url(pastel-blue-vignette-concrete-textured-background.jpg);
+    font-size: large;
+    color: black;
+}
+
+.paragraph{
+    margin-left: 400px;
+}
+h1{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: rgba(0, 0, 0, 0.26);
+}
