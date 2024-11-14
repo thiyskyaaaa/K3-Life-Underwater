@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    background-image: url(shell.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header, footer {
+    position: fixed;
+    background-color: #01122f;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+    padding-left: 20px;
+}
+header {
+    padding-bottom: 0px;
+    align-items: flex-end;
+}
+footer {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    bottom: 0%;
+    align-items: center;
+}
+.logo {
+    padding-right: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 80px;
+    margin-right: 10px;
+}
+.logo-text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+.student-name {
+    text-align: left;
+}
+.role {
+    font-size: 14px;
+}
+.editor {
+    text-align: right;
+}
+.editor a {
+    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.nav-links a {
+    padding: 20px;
+}
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.editor a, .nav-links a {
+    background-color: #0f203c;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+}
+.editor a:hover, .nav-links a:hover{
+    background-color: #4679cb;
+    color: black; 
+}
+.editor a:active, .nav-links a:active{
+    text-decoration: underline;
+    background-color: #46bbf1;
+    color: #0a347d;
+}
+.content {
+    padding-top: 120px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom:100px ;
+}

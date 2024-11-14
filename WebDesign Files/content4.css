@@ -1,0 +1,137 @@
+/* Styles for the main content container */
+#main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+}
+
+/* Styles for the main title */
+h1{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 100;
+    color: #162268;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+/* Styles for images with class 'image_size' */
+.image_size{
+    width: 300px;
+    margin: 10px;
+    align-items: center;
+    display: inline;
+}
+/* Styles for navigation links */
+#economyLinks{
+    font-size: 16px;  
+    margin: 16px;
+    color:rgb(18, 20, 129)
+}
+/* Hover effect for navigation links */
+#economyLinks:hover{
+    color:#b3ffc3;
+    font-size: 21px;
+}
+/* Active state for navigation links */
+#economyLinks:active{
+    color: #a8dbf3;
+    
+}
+/* Styles for navigation links */
+#fisherLinks{
+    font-size: 16px;  
+    margin: 16px;
+    color:rgb(18, 20, 129)
+}
+/* Hover effect for navigation links */
+#fisherLinks:hover{
+    color:#b3ffc3;
+    font-size: 21px;
+}
+/* Active state for navigation links */
+#fisherLinks:active{
+    color: #a8dbf3;
+    
+}
+/* Styles for navigation links */
+#innoLinks{
+    font-size: 16px;  
+    margin: 16px;
+    color:rgb(18, 20, 129)
+}
+/* Hover effect for navigation links */
+#innoLinks:hover{
+    color:#b3ffc3;
+    font-size: 21px;
+}
+/* Active state for navigation links */
+#innoLinks:active{
+    color: #a8dbf3;
+    
+}
+/* Styles for navigation links container */
+#navLinks{
+    background-color: rgb(137, 180, 218);
+    padding: 30px;
+    margin-top: 50px;
+    color: black;
+    font-weight: bolder; 
+    text-align: center;
+    font-size: small;
+}
+
+/* Styles for main content boxes */
+.main_box {
+    background-color: #b9c4da;
+    border: 2px solid #0d465d;
+    border-radius: 0;  /* Makes it rectangular */
+    padding: 20px;
+    margin: 30px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+}
+/* Styles for headings inside main content boxes */
+.main_box h2 {
+    color: #2E89BA;
+    border-bottom: 2px solid #1a5f7a;
+    padding-bottom: 10px;
+    margin-top: 0;
+    text-align: center;
+    font-size: xx-large;
+}
+/* Styles for paragraphs inside main content boxes */
+.main_box p {
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    font-size: larger;
+}
+/* Styles for additional content boxes */
+.box {
+    background-color: #D2E0FB;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Styles for headings inside additional content boxes */
+.box h3 {
+    color: #556FB5;
+    margin-top: 0;
+    text-align: center;
+    font-size: x-large;
+}
+
+/* Styles for paragraphs inside additional content boxes */
+.box p {
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    font-size: large;
+}

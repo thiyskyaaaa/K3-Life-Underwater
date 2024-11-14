@@ -1,0 +1,44 @@
+.home-info {
+    padding: 0px;
+    border-radius: 25px;
+    width: 100%;
+    display: flex;
+    background: radial-gradient(circle,rgba(255, 255, 255, 0.555), rgba(121, 156, 167, 0.555));
+}
+
+.home-logo {
+    padding-right: 0px;
+    width: 50%;
+}
+
+.home-logo img {
+    width: 90%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    float: left;
+}
+
+.home-text {
+    font-size: 30px;
+    padding: 50px;
+    width: 50%;
+    color: #001a47;
+}
+
+.home-text p {
+    font-size: 20px;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.image-grid img {
+    width: calc(50% - 100px);
+    min-width: 80px;
+    height: auto;
+}

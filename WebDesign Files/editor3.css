@@ -1,0 +1,62 @@
+body{
+    scroll-behavior: smooth;
+    background-color: rgb(125, 121, 121);
+}
+h1{
+    font-size: 200px;
+    line-height: 0.4;
+    text-align: left;
+    margin-top: 0;
+    padding-left: 20px;
+    
+}
+a{
+    font-size: 30px;
+    color: rgb(169, 162, 78);
+    font-weight: bold;
+}
+a:hover{
+    color: rgb(55, 2, 2);
+    font-size: 32px;
+}
+#intro{
+    font-size: 35px;
+    line-height: 0.1;
+    text-align: left;
+    padding: 5px;
+    color: black;   
+}
+.background{
+    background-image: url("editor.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    
+    margin-top: 0px;
+    padding: 40px;
+}
+.team{
+    background-color: rgb(227, 145, 158);
+}
+.profile{
+    background-color: rgb(216, 210, 165);
+}
+.content{    
+    background-color: rgb(217, 154, 226);
+}
+#bottom{
+    padding: 10px;
+}
+.screen{
+    text-align: left;
+    padding: 60px;
+}
+.text{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: right;
+}
+.container{
+    display: flex;
+}

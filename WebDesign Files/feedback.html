@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Share your feedback!</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="feedback.css">
+    </head>
+    <body>
+        <!--Inserting the header (with navigation bar) to the HTML file-->
+        <header>
+            <div class="logo">
+                <img src="logo.svg" alt="Logo">
+                <div class="logo-text">SUSTAINABLE SEAS</div>
+            </div>
+            <nav class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="shop.html">Shop</a>
+                <a href="profile.html">User&nbsp;Profile</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="sitemap.html">Sitemap</a>
+                <a href="team.html">Team</a>
+            </nav>
+        </header>
+        <div class = "content">
+            <!--Creating the main <div> container where all the content will be placed-->
+            <div class="feedbackContainer">
+
+                <!--Creating the form and ensuring it mails the content to the given email address-->
+                <form id="feedbackForm" method="post" action="mailto:maariya.marzook@gmail.com" enctype="text/plain" novalidate>
+                    <h1>Feedback Form</h1>
+
+                    <!--Creating the first input field for the visitor's name-->
+                    <label for="name">Name: <span class="asterisk">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                    <span id="nameError" class="error">This field is required!</span>
+                    <br><br><br><hr>
+
+                    <!--Creating the second input field for the visitor's email-->
+                    <label for="email">Email: <span class="asterisk">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <span id="emailError" class="error">Please enter a valid email address</span>
+                    <br><br><br><hr>
+
+                    <!--Creating the third input field to check is this is a new visitor-->
+                    <label>Was this your first time visiting?</label>
+                    <div class="choice">
+                        <label for="firstTimeYes"><input type="radio" id="firstTimeYes" name="firstTime" value="Yes"> Yes</label>
+                        <label for="firstTimeNo"><input type="radio" id="firstTimeNo" name="firstTime" value="No"> No</label>
+                    </div>
+                    <span id="firstTimeError" class="error">Please select one of the given options</span>
+                    <br><br><hr>
+
+                    <!--Creating the fourth input field to see if the visitor fond the site informative-->
+                    <label>Was this website informative and easy to navigate through?</label>
+                    <div class="choice">
+                        <label for="informativeYes"><input type="radio" id="informativeYes" name="informative" value="Yes"> Yes</label>
+                        <label for="informativeNo"><input type="radio" id="informativeNo" name="informative" value="No"> No</label>
+                    </div>
+                     <span id="informativeError" class="error">Please select one of the given options</span>
+                     <br><br><hr>
+
+                     <!--Creating the fifth input field to collect any suggest from the visitor-->
+                    <label for="improvements">Please suggest any improvements for the future:</label>
+                    <textarea id="improvements" name="improvements"></textarea>
+                    <br><br><br><hr>
+
+                    <!--Creating the sixth input field to get the visitor's site rating-->
+                    <label>How satisfied are you with our site? (0-10)</label>
+                    <div class="rating">
+                        <label for="rate1"><input type="radio" id="rate1" name="rating" value="1"> 1</label>
+                        <label for="rate2"><input type="radio" id="rate2" name="rating" value="2"> 2</label>
+                        <label for="rate3"><input type="radio" id="rate3" name="rating" value="3"> 3</label>
+                        <label for="rate4"><input type="radio" id="rate4" name="rating" value="4"> 4</label>
+                        <label for="rate5"><input type="radio" id="rate5" name="rating" value="5"> 5</label>
+                        <label for="rate6"><input type="radio" id="rate6" name="rating" value="6"> 6</label>
+                        <label for="rate7"><input type="radio" id="rate7" name="rating" value="7"> 7</label>
+                        <label for="rate8"><input type="radio" id="rate8" name="rating" value="8"> 8</label>
+                        <label for="rate9"><input type="radio" id="rate9" name="rating" value="9"> 9</label>
+                        <label for="rate10"><input type="radio" id="rate10" name="rating" value="10"> 10</label>
+                    </div>
+                    <span id="ratingError" class="error">Please rate your experience</span>
+                    <br><br><hr>
+
+                    <!--Creating the seventh input field (select field) to ask the visitor if they want updates regarding the site-->
+                    <label>Would you like to receive updates about the website and any offers?</label>
+                    <select id="updates" name="updates">
+                        <option value="Email">Yes - via Email</option>
+                        <option value="None">No</option>
+                    </select>
+                    <br><br><br><hr>
+
+                    <!--Creating the eigth input field to get any additional questions or feedback from the visitor-->
+                    <label for="additional">Do you have any additional questions or requests?</label>
+                    <textarea id="additional" name="additional"></textarea>
+                    <br><br>
+
+                    <!--Adding a submit and preview button to the form-->
+                    <button type="button" onclick="validateAndPreview()">Preview</button>
+                    <button type="submit">Submit</button>
+                </form>
+
+                <!--Creating the feedback preview to be displayed after the user clicks the preview button-->
+                <div id="preview">
+                    <h2>Preview Feedback</h2>
+                    <br>
+                    <div id="previewInfo"></div>
+                    <button onclick="closePreview()">Edit</button>
+                    <button onclick="finalSubmit()">Submit</button>
+                </div>
+
+                <!--Creating confirmation message to be displayed after the user clicks the submit button-->
+                <div id="confirmationMessage" style="display: none;">
+                    <h2>Thank you!</h2>
+                    <br>
+                    <p>Your feedback has been received.</p>
+                </div>
+                <!--Linking the javascript file for form validation and error handling-->
+                <script src="feedback.js"></script>
+            </div>  
+        </div>
+
+        <!--Inserting the footer (Student name and Page Editor link) to the HTML file-->
+        <footer>
+            <div class = "student-name">
+                <p>Fathima Maariya Marzook<br>
+                    <span class = "role">Student 2</span>
+                </p>
+            </div>
+            <div class = "editor">
+                <a href = "editor2.html">Page Editor</a>
+            </div>
+        </footer>
+    </body>
+</html>

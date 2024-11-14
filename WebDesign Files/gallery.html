@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <!-- Linking external stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery_style.css">
+    
+</head>
+
+
+<body>
+    <!-- Header section with logo and navigation -->
+    <header>
+        <div class="logo">
+            <img src="logo.svg" alt="Logo">
+            <div class="logo-text">SUSTAINABLE SEAS</div>
+        </div>
+        <!-- Navigation menu items -->
+        <nav class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="shop.html">Shop</a>
+            <a href="profile.html">User&nbsp;Profile</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="sitemap.html">Sitemap</a>
+            <a href="team.html">Team</a>
+        </nav>
+    </header>
+
+    <!-- Main content area -->
+    <div class="content">
+        <!-- Theme and font style controls -->
+        <div class="theme-controls">
+            <label for="themeColor">Theme Color:</label>
+            <select id="themeColor">
+                <!-- Theme color options -->
+                <option value="default-theme">Default</option>
+                <option value="lightblue-theme">Light Blue</option>
+                <option value="lightgreen-theme">Light Green</option>
+                <option value="lightpink-theme">Light Pink</option>
+                <option value="dark-theme">Dark</option>
+            </select>
+
+            <label for="fontStyle">Font Style:</label>
+            <select id="fontStyle">
+                <!-- Font style options -->
+                <option value="default-font">Default</option>
+                <option value="Arial-font">Arial</option>
+                <option value="CourierNew-font">Courier New</option>
+                <option value="Georgia-font">Georgia</option>
+                <option value="Verdana-font">Verdana</option>
+            </select>
+        </div>
+
+
+        <!-- Video background -->
+        <div class="video-background">
+            <video autoplay muted loop id="myVideo">
+                <source src="gallery1.mp4" type="video/mp4">
+            </video>
+        </div>
+    
+        <!-- Gallery title and instructions -->
+        <h1>PHOTO gallery</h1>
+        <h2>Main Photos</h2>
+        <p class="click">Click on the main photos to view the album</p>
+    
+        <!-- Main photo containers -->
+        <div class="main-photos">
+            <!-- Each div represents a clickable main photo -->
+            <div id="mainView1" class="photo-container">
+                <img src="gallery2.png" alt="Main Photo 1" class="photo" onclick="showAlbum(1)">
+            </div>
+            <div id="mainView2" class="photo-container">
+                <img src="gallery3.png" alt="Main Photo 2" class="photo" onclick="showAlbum(2)">
+            </div>
+            <div id="mainView3" class="photo-container">
+                <img src="gallery4.png" alt="Main Photo 3" class="photo" onclick="showAlbum(3)">
+            </div>
+            <div id="mainView4" class="photo-container">
+                <img src="gallery5.png" alt="Main Photo 4" class="photo" onclick="showAlbum(4)">
+            </div>
+        </div>
+        
+        <!-- Album 1: Protect and Restore Marine Ecosystems -->
+        <div id="album1" class="album">
+            <h2>1. PROTECT AND RESTORE MARINE ECOSYSTEMS</h2>
+                <h3>1.1 Reduce marine pollution</h3>
+                <img src="gallery2_1.jpg" alt="Photo 1">
+                <img src="gallery2_2.jpeg" alt="Photo 2">
+                <img src="gallery2_3.jpg" alt="Photo 3">
+                <img src="gallery2_4.jpg" alt="Photo 4">
+                <img src="gallery2_5.jpg" alt="Photo 5">
+                <img src="gallery2_6.jpeg" alt="Photo 6">      
+                <img src="gallery2_7.jpeg" alt="Photo 7">
+                <img src="gallery2_8.jpeg" alt="Photo 8">
+                
+                
+                <h3>1.2 Protect and restore ecosystems</h3>
+                <img src="gallery2_9.jpeg" alt="Photo 9">
+                <img src="gallery2_10.jpeg" alt="Photo 10"> 
+                <img src="gallery2_17.jpeg" alt="Photo 17">      
+                <img src="gallery2_18.jpeg" alt="Photo 18">
+                <img src="gallery2_19.jpeg" alt="Photo 19">
+                
+        
+                <h3>1.3 Reduce ocean acidification</h3>
+                <img src="gallery2_11.jpeg" alt="Photo 11">
+                <img src="gallery_12.jpeg" alt="Photo 12">
+                <img src="gallery2_20.jpg" alt="Photo 20">
+                <img src="gallery2_21.jpeg" alt="Photo 21">
+                <img src="gallery2_22.jpeg" alt="Photo 22">
+                
+        
+                <h3>1.4 Conserve coastal and marine areas</h3>
+                <img src="gallery2_13.jpeg" alt="Photo 13">
+                <img src="gallery2_14.jpeg" alt="Photo 14">
+                <img src="gallery2_15.jpeg" alt="Photo 15">
+                <img src="gallery2_16.jpeg" alt="Photo 16">        
+        </div>
+
+
+         <!-- Album 2: Protect and Restore Marine Ecosystems (continued) -->
+        <div id="album2" class="album">
+            <h2>2. PROTECT AND RESTORE MARINE ECOSYSTEMS</h2>
+            <h3>2.1 Sustainable fishing</h3>
+            <img src="gallery3_1.jpg" alt="Photo 1">
+            <img src="gallery3_2.jpg" alt="Photo 2">
+            <img src="gallery3_3.jpg" alt="Photo 3">
+            <img src="gallery3_4.png" alt="Photo 4">
+            <img src="gallery3_5.jpg" alt="Photo 5">
+            <img src="gallery3_6.jpg" alt="Photo 6">
+            <img src="gallery3_7.jpg" alt="Photo 7">
+
+            <h3>2.2 End subsidies contributing to overfishing</h3>
+            <img src="gallery3_8.jpeg" alt="Photo 8">
+            <img src="gallery3_9.jpg" alt="Photo 9">
+            <img src="gallery3_10.jpg" alt="Photo 10">
+            <img src="gallery3_11.jpeg" alt="Photo 11">
+            <img src="gallery3_12.jpg" alt="Photo 12">
+
+            <h3>2.3 Support small scale fishers</h3>
+            <img src="gallery3_19.jpeg" alt="Photo 13">
+            <img src="gallery3_20.jpeg" alt="Photo 14">
+            <img src="gallery3_21.jpg" alt="Photo 15">
+            <img src="gallery3_22.jpeg" alt="Photo 16">
+            <img src="gallery3_23.jpeg" alt="Photo 17">
+            <img src="gallery3_24.jpg" alt="Photo 18">
+            <img src="gallery3_25.jpg" alt="Photo 19">
+            <img src="gallery3_26.jpg" alt="Photo 20">            
+        </div>
+
+
+        <!-- Album 3: Enhance Marine Resource Management -->
+        <div id="album3" class="album">
+            <h2>3. ENHANCE MARINE RESOURCE MANAGEMENT</h2>
+            <h3>3.1 Increase the economic benefits from sustainable use of marine resources</h3>
+            <img src="gallery3_27.jpeg" alt="Photo 1">
+            <img src="gallery3_28.jpeg" alt="Photo 2">
+            <img src="gallery3_29.jpg" alt="Photo 3">
+            <img src="gallery3_30.jpg" alt="Photo 4">
+            <img src="gallery3_31.jpg" alt="Photo 5">
+            <img src="gallery3_32.jpeg" alt="Photo 6">
+            <img src="gallery3_33.jpg" alt="Photo 7">
+            
+
+            <h3>3.2 Implement and enforce international sea law</h3>
+            <img src="gallery3_13.jpeg" alt="Photo 8">
+            <img src="gallery3_14.jpg" alt="Photo 9">
+            <img src="gallery3_15.jpg" alt="Photo 10">
+            <img src="gallery3_16.jpg" alt="Photo 11">
+            <img src="gallery3_17.jpg" alt="Photo 12">
+            <img src="gallery3_18.jpg" alt="Photo 13">
+        </div>
+
+
+         <!-- Album 4: Advance Ocean Science and Research -->
+        <div id="album4" class="album">
+            <h2>4. ADVANCE OCEAN SCIENCE AND RESEARCH</h2>
+            <h3>4.1 Increase scientific knowledge, research and technology for ocean health</h3>
+            <img src="gallery4_1.jpg" alt="Photo 1">
+            <img src="gallery4_2.jpg" alt="Photo 2">
+            <img src="gallery4_3.jpg" alt="Photo 3">
+            <img src="gallery4_4.png" alt="Photo 4">
+            <img src="gallery4_5.png" alt="Photo 5">
+            <img src="gallery4_6.jpg" alt="Photo 6">
+            <img src="gallery4_7.jpg" alt="Photo 7">
+            <img src="gallery4_8.jpeg" alt="Photo 8">
+            <img src="gallery4_9.jpg" alt="Photo 9">
+            <img src="gallery4_10.png" alt="Photo 10">                 
+        </div>
+   
+         <!-- Back button to return to main photos -->
+<button id="backButton" class="back-button" onclick="goBack()">Back to Main Photos</button>
+
+</div>
+
+<!-- Footer section -->
+<footer>
+    <div class="student-name">
+        <p>Thisakya Pathirathne<br>
+            <span class="role">Student 4</span>
+        </p>
+    </div>
+    <div class="editor">
+        <a href="editor4.html">Page Editor</a>
+    </div>
+</footer>
+
+<!-- Link to external JavaScript file -->
+    <script src="gallery.js" ></script>
+   
+          
+   
+</body>
+</html>

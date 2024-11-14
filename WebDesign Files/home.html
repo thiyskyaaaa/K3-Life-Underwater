@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <!--Inserting the header (with navigation bar) to the HTML file-->
+        <header>
+            <div class="logo">
+                <img src="logo.svg" alt="Logo">
+                <div class="logo-text">SUSTAINABLE SEAS</div>
+            </div>
+            <nav class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="shop.html">Shop</a>
+                <a href="profile.html">User&nbsp;Profile</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="sitemap.html">Sitemap</a>
+                <a href="team.html">Team</a>
+            </nav>
+        </header>
+
+        <div class="content">
+            <!--Creating the main <div> where all the content will be placed-->
+            <div class = "home-info">
+
+                <!--Creating a <div> for the text in the Home page-->
+                <div class = "home-text">
+                    <h1><em>LIFE BELOW WATER...</em></h1>
+                    <br>
+                    <p>The Sustainable Seas project aims to conserve and use the
+                         oceans, seas and marine resources for sustainable development while 
+                         protecting the marine biodiversity and ecosystems.
+                         <br><br>
+                        To explore the various ways in which we
+                        aim to protect the ocean and it's biodiversity
+                        please click any of the links below!
+                        <br><br>
+                    </p>
+
+                    <!--Creating an <div> for the clickable images-->
+                    <div class="image-grid">
+                        <img src="bio.jpeg" alt="bio-diversity" usemap="#bio" id="bio">
+                        <img src="pollution.jpeg" alt="ocean-pollution" usemap="#pollution" id="pollution">
+                        <img src="sci.jpeg" alt="scientific-research" usemap="#sci" id="sci">
+                        <img src="econ.jpeg" alt="blue-econony-growth" usemap="#econ" id="econ">
+                    </div>
+
+                    <!--Creating image maps for each image and linking them to each content page-->
+                    <map name="bio">
+                        <area id="area1" alt="area1" shape="rect" coords="0,0,100,100" href="content1.html">
+                    </map>
+                    <map name="pollution">
+                        <area id="area2" alt="area2" shape="rect" coords="0,0,100,100" href="content2.html">
+                    </map>
+                    <map name="sci">
+                        <area id="area3" alt="area3" shape="rect" coords="0,0,100,100" href="content3.html">
+                    </map>
+                    <map name="econ">
+                        <area id="area4" alt="area4" shape="rect" coords="0,0,100,100" href="content4.html">
+                    </map>
+                </div>
+
+                <!--Creating a <div> to display the site logo-->
+                <div class = "home-logo">
+                    <img src="logo.svg" alt="Logo"> 
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Additional javascript to ensure the clickable area changes with the image size
+            window.onload = function() {
+                var img1 = document.getElementById('bio');
+                var img2 = document.getElementById('pollution');
+                var img3 = document.getElementById('sci');
+                var img4 = document.getElementById('econ');
+
+                var area1 = document.getElementById('area1');
+                var area2 = document.getElementById('area2');
+                var area3 = document.getElementById('area3');
+                var area4 = document.getElementById('area4');
+
+                area1.coords = '0,0,' + img1.naturalWidth + ',' + img1.naturalHeight;
+                area2.coords = '0,0,' + img2.naturalWidth + ',' + img2.naturalHeight;
+                area3.coords = '0,0,' + img3.naturalWidth + ',' + img3.naturalHeight;
+                area4.coords = '0,0,' + img4.naturalWidth + ',' + img4.naturalHeight;
+            };
+        </script>
+
+        <!--Inserting the footer (Student name and Page Editor link) to the HTML file-->
+        <footer>
+            <div class = "student-name">
+                <p>Fathima Maariya Marzook<br>
+                    <span class = "role">Student 2</span>
+                </p>
+            </div>
+            <div class = "editor">
+                <a href = "editor2.html">Page Editor</a>
+            </div>
+        </footer>
+    </body>
+</html>

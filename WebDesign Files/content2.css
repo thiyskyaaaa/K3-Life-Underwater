@@ -1,0 +1,89 @@
+h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+}
+
+.main-info {
+    width: 100%;
+    display: block;
+    
+}
+
+.main-text {
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.section-links a {
+    padding: 20px;
+}
+
+.section-links {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.jump-to-top {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.section-links a:link{color: white;}
+.section-links a:hover{color: #00345a;}
+.section-links a:active {
+    text-decoration: underline;
+    color: #070019;
+}
+.section-links :visited{color: white;}
+
+.jump-to-top a:link{color: white;}
+.jump-to-top a:hover{color: #00345a;}
+.jump-to-top a:active {
+    text-decoration: underline;
+    color: #070019;
+}
+.jump-to-top :visited{color: white;}
+
+.carbonFootprint, .wasteManagement, .reducePlastic {
+    background-color: rgb(201, 232, 247);
+    background:rgba(201, 232, 247, 0.555);
+    text-align: justify;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 25px;
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carbonFootprint p, .wasteManagement p, .reducePlastic p {
+    font-size: 19px;
+    color: #e2f8f7;
+}
+
+.wasteManagement {
+    background-image: url("waste.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carbonFootprint {
+    background-image: url("carbon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reducePlastic {
+    background-image: url("plastic.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}  

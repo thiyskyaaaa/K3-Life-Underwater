@@ -1,0 +1,91 @@
+.feedbackContainer {
+    color: #001a47;
+    width: 65%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: rgb(201, 232, 247);
+    background:rgba(201, 232, 247, 0.555);
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], select, textarea {
+    width: 100%;
+    margin-top: 5px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.choice {
+    margin-top: 5px;
+}
+
+.choice label {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+.choice input {
+    margin-right: 5px;
+}
+
+.rating {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+button {
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #163668;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+}
+
+button:hover {
+    background-color: #3e7bde;
+    color: #001a47;
+}
+
+button:active {
+    text-decoration: underline;
+}
+
+.error {
+    margin-top: 5px;
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+.asterisk {
+    color: red;
+}
+
+#preview {
+    display: none;
+}

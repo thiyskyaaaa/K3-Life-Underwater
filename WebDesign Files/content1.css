@@ -1,0 +1,42 @@
+
+.content {
+    padding: 100px;
+}
+
+section {
+    background: rgb(77, 134, 156,0.8);
+    margin: 5em;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+    margin: auto;
+
+}
+h1 {
+    color:#01122f;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #e9f5ff;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+ul li strong {
+    color: #0056b3;
+}
+

@@ -1,0 +1,164 @@
+/* Theme background and text color styles */
+body.default-theme{
+    background-color: white;
+    color: black;
+}
+body.lightblue-theme {
+    background-color: #c6eef4;
+    color: #c6eef4;
+}
+body.lightgreen-theme {
+    background-color: #c3efc7;
+    color:#c3efc7;
+}
+body.lightpink-theme {
+    background-color: #eec9d5;
+    color:#eec9d5;
+}
+body.dark-theme {
+    background-color: #000000;
+    color: rgb(0, 0, 0);
+}
+
+/* Font family styles */
+body.default-font {
+    font-family: 'Helvetica', sans-serif;
+}
+
+body.Arial-font {
+    font-family: 'Arial', sans-serif;
+}
+
+body.CourierNew-font {
+    font-family: 'Courier New', monospace;
+}
+
+body.Georgia-font {
+    font-family: 'Georgia', serif;
+}
+
+body.Verdana-font {
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Video background styles */
+.video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#myVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* Heading styles */
+h1{
+    font-family:'Times New Roman', Times, serif;
+    font-size:150px;
+    text-decoration: underline;
+    text-align: center;
+    font-style: italic;
+    color: rgb(169, 226, 255);
+    
+}
+h2{
+    font-family:'Times New Roman', Times, serif;
+    font-size:50px;
+    text-align: center;
+    color: #5B7DB1; 
+    background-color: #E1F7F5;
+}
+h3{
+    font-family:'Times New Roman', Times, serif;
+    font-size:30px;
+    text-align: center;
+    color:#E1F7F5;
+}
+.click{
+    font-family:'Times New Roman', Times, serif;
+    font-size:30px;
+    text-align: center;
+    color: rgba(95, 173, 212, 0.569);
+    background-color: #E1F7F5;
+}
+
+/* Main photos container styles */
+.main-photos {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 100%;
+
+}
+/* Individual photo container styles */
+    .photo-container {
+        width: 300px;
+        margin: 20px auto;
+        flex: 0 1 auto;
+        max-width: 300px;
+    }
+    /* Photo styles */
+    .photo {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    }
+
+    .photo:hover {
+        transform: scale(1.05);
+    }
+
+    /* Album styles */
+    .album {
+        display: none;
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
+    }
+    .album img {
+        width: 300px;
+        margin: 10px;
+        transition: transform 0.3s ease;
+    }
+    .album img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    /* Back button styles */
+    .back-button {
+        display: none;
+        background-color: #0095ff8e;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 20px auto;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .back-button:hover {
+        background-color: #00bbff;
+    }
+
+    
+

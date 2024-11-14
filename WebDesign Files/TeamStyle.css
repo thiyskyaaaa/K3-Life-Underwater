@@ -1,0 +1,72 @@
+
+h1{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    font-size: 80px;
+    font-weight: 100;
+    text-align: center;
+    color: rgb(140, 128, 63);
+}
+.main{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profileCard{
+    position: relative;
+    width: 220px;
+    height: 220px;
+    background: rgb(255, 255, 255, 0.6);
+    padding: 30px;
+    border-radius: 100px;
+    box-shadow: 0 0 22px #3336;
+    transition: 2s;
+    margin: 0 25px;
+}
+.profileCard:hover{
+    border-radius: 10px;
+    height: 300px;
+}
+
+.profileCard .img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+    z-index: 99;
+}
+.profileCard:hover .img{
+    transform: translateY(-60px);
+}
+.img img{
+    width: 100%;
+    border-radius: 60%;
+    box-shadow: 0 0 22px #3336;
+    transition: 2s;
+}
+.profileCard:hover img{
+    border-radius: 10px;
+}
+.caption{
+    text-align: center;
+    transform: translateY(-120px);
+    opacity: 0;
+    transition: 2s;
+}
+.profileCard:hover .caption{
+    opacity: 1;
+}
+.caption p{
+    font-size: 17px;
+    color: #00286b;
+    margin: 2px 0 6px 0;
+}
+.caption h3{
+    font-size: 21px;
+
+}
+.caption .role{
+    color: rgb(140, 128, 63);
+}

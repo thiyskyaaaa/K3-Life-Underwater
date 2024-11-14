@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-image: url(blue.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h2 {
+    color: #083775;
+    text-align: center;
+    font-size: 30px;
+}
+
+.main-info {
+    width: 100%;
+    display: block;
+    
+}
+
+.main-text {
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.jump-to-top {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.file-links {
+    font-size: large;
+}
+
+.file-links a:link{color: #083775;}
+.file-links a:hover{color: #ffffff;}
+.file-links a:active {color: #18607b;}
+.file-links :visited{color: #083775;}
+
+.jump-to-top a:link{color: white;}
+.jump-to-top a:hover{color: #000000;}
+.jump-to-top a:active {color: #64d5fe;}
+.jump-to-top :visited{color: white;}
+
+.sub-text {
+    background-color: rgb(201, 232, 247);
+    background:rgba(201, 232, 247, 0.7);
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 25px;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.sub-text p {
+    font-size: 19px;
+    color: #083775;
+}

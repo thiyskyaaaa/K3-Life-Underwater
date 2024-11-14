@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Profile</title>
+        <!--Linking external style sheets-->
+        <link rel="stylesheet" href="UserProfileStyle.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--Template header-->
+        <header>
+            <div class="logo">
+                <img src="logo.svg" alt="Logo">
+                <div class="logo-text">SUSTAINABLE SEAS</div>
+            </div>
+            <nav class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="shop.html">Shop</a>
+                <a href="profile.html">User&nbsp;Profile</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="sitemap.html">Sitemap</a>
+                <a href="team.html">Team</a>
+            </nav>
+        </header>
+        <!--main content-->
+        <div class="content">
+            <!--invisible container to make scrolling easier and to get enough length for the page-->
+            <div class="invisibleContainer">
+                <!--main container-->
+                <div class="container">
+                    <p id="progressText"></p>
+                    <br>
+                    <!--progress bar -->
+                    <div id="progressBarContainer">
+                        <div id="progressBar"></div>
+                    </div>
+                    <!--input field, text and buttons -->
+                    <div id="formContainer">
+                        <div id="promptContainer">
+                            <span id="promptStage"></span>
+                            <br>
+                            <p id="promptText"></p>
+                            <br>
+                            <input type="text" id="userInput" placeholder="Your answer...">
+                            <div class="btn">
+                                <button id="nextButton">Next</button>
+                                <button id="skipButton">Skip</button>
+                            </div>
+                        </div>
+                        <!--preview -->
+                        <div id="previewContainer" style="display: none;">
+                            <h2>Preview</h2>
+                            <div id="previewContent"></div>   
+                        </div>
+                        <!--summary and edit , submit buttons -->
+                        <div id="summaryContainer" style="display: none;">
+                            <h2>Profile Summary</h2>
+                            <div id="summaryContent"></div>
+                            <div class="btn">
+                                <button id="editButton">Edit</button>
+                                <button id="submitButton">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--linking the java script file -->
+            <script src="UserProfile.js"></script>
+        </div>
+
+        <!--template footer-->
+        <footer>
+            <div class = "student-name">
+                <p>Senuri Hansamini Wedamulla<br>
+                    <span class = "role">Student 3</span>
+                </p>
+            </div>
+            <div class = "editor">
+                <a href = "editor3.html" target="_blank">Page Editor</a>
+            </div>
+        </footer>
+    </body>
+</html>

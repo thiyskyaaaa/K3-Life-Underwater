@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Template</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="shop.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="logo.svg" alt="Logo">
+                <div class="logo-text">SUSTAINABLE SEAS</div>
+            </div>
+            <nav class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="shop.html">Shop</a>
+                <a href="profile.html">User&nbsp;Profile</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="sitemap.html">Sitemap</a>
+                <a href="team.html">Team</a>
+            </nav>
+        </header>
+    
+    <div class="content" id="content">
+        <div class="shop-header">
+            <h1>Charity Shop for Ocean Protection</h1>
+            <p class="shop-message">Every purchase helps save the ocean and protect sea animals. Thank you for your support!</p>
+        </div>
+        
+        
+        <div class="shop-container">
+            
+        <!-- Women's T-Shirts -->
+        <div class="product-category" id="women-tshirts">
+            <h2>Women's T-Shirts</h2>
+            <div class="product-grid">
+                
+                <div class="product">
+                    <img src="images/women-shirt1.jpg" alt="Women Shirt 1">
+                    <h3>Wave Whisperer T-Shirt</h3>
+                    <p>$20.00</p>
+                    <div class="product-options">
+                        <label for="size-women1">Size:</label>
+                        <select id="size-women1">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label for="color-women1">Color:</label>
+                        <select id="color-women1">
+                            <option value="Light Blue">Blue</option>
+                            <option value="White">White</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart('Wave Whisperer T-Shirt', 20, 'women-shirt1.jpg', document.getElementById('size-women1').value, document.getElementById('color-women1').value);scrollToOrderSummary();showNotification(message);">Add to Cart</button>
+                </div>
+                
+                <div class="product">
+                    <img src="images/women-shirt2.jpg" alt="Women Shirt 2">
+                    <h3>Sea Saver T-Shirt</h3>
+                    <p>$18.00</p>
+                    <div class="product-options">
+                        <label for="size-women2">Size:</label>
+                        <select id="size-women2">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label for="color-women2">Color:</label>
+                        <select id="color-women2">
+                            <option value="Blue">Blue</option>
+                            <option value="White">White</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart('Sea Saver T-Shirt', 18, 'women-shirt2.jpg', document.getElementById('size-women2').value, document.getElementById('color-women2').value);scrollToOrderSummary();">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="images/women-shirt3.jpg" alt="Women Shirt 3">
+                    <h3>Ocean Ally T-Shirt</h3>
+                    <p>$18.00</p>
+                    <div class="product-options">
+                        <label for="size-women3">Size:</label>
+                        <select id="size-women3">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label for="color-women3">Color:</label>
+                        <select id="color-women3">
+                            <option value="Blue">Blue</option>
+                            <option value="White">White</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart('Ocean Ally T-Shirt', 18, 'women-shirt3.jpg', document.getElementById('size-women3').value, document.getElementById('color-women3').value);scrollToOrderSummary();">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="images/women-shirt4.jpg" alt="Women Shirt 4">
+                    <h3>Marine Protector T-Shirt</h3>
+                    <p>$18.00</p>
+                    <div class="product-options">
+                        <label for="size-women4">Size:</label>
+                        <select id="size-women4">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label for="color-women4">Color:</label>
+                        <select id="color-women4">
+                            <option value="Blue">Blue</option>
+                            <option value="White">White</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart('Marine Protector T-Shirt', 18, 'women-shirt4.jpg', document.getElementById('size-women4').value, document.getElementById('color-women4').value);scrollToOrderSummary();">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="images/women-shirt5.jpg" alt="Women Shirt 5">
+                    <h3>Coral Caregiver T-Shirt</h3>
+                    <p>$18.00</p>
+                    <div class="product-options">
+                        <label for="size-women5">Size:</label>
+                        <select id="size-women5">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label for="color-women5">Color:</label>
+                        <select id="color-women5">
+                            <option value="Blue">Blue</option>
+                            <option value="White">White</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart('Coral Caregiver T-Shirt', 18, 'women-shirt5.jpg', document.getElementById('size-women5').value, document.getElementById('color-women5').value);scrollToOrderSummary();">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="images/women-shirt6.jpg" alt="Women Shirt 6">
+                    <h3>Tide Tender T-Shirt</h3>
+                    <p>$18.00</p>
+                    <div class="product-options">
+                        <label for="size-women6">Size:</label>
+                        <select id="size-women6">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label for="color-women6">Color:</label>
+                        <select id="color-women6">
+                            <option value="Blue">Blue</option>
+                            <option value="White">White</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart('Tide Tender T-Shirt', 18, 'women-shirt6.jpg', document.getElementById('size-women6').value, document.getElementById('color-women6').value);scrollToOrderSummary();">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="images/women-shirt7.jpg" alt="Women Shirt 7">
+                    <h3>Blue Believer T-Shirt</h3>
+                    <p>$18.00</p>
+                    <div class="product-options">
+                        <label for="size-women7">Size:</label>
+                        <select id="size-women7">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label for="color-women7">Color:</label>
+                        <select id="color-women7">
+                            <option value="Blue">Blue</option>
+                            <option value="White">White</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart('Blue Believer T-Shirt', 18, 'women-shirt7.jpg', document.getElementById('size-women7').value, document.getElementById('color-women7').value);scrollToOrderSummary();">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="images/women-shirt8.jpg" alt="Women Shirt 8">
+                    <h3>Tide Tender T-Shirt</h3>
+                    <p>$18.00</p>
+                    <div class="product-options">
+                        <label for="size-women8">Size:</label>
+                        <select id="size-women8">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label for="color-women8">Color:</label>
+                        <select id="color-women8">
+                            <option value="Blue">Blue</option>
+                            <option value="White">White</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart('Tide Tender T-Shirt', 18, 'women-shirt8.jpg', document.getElementById('size-women8').value, document.getElementById('color-women8').value);scrollToOrderSummary();">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="images/women-shirt9.jpg" alt="Women Shirt 9">
+                    <h3>Love sea T-Shirt</h3>
+                    <p>$18.00</p>
+                    <div class="product-options">
+                        <label for="size-women9">Size:</label>
+                        <select id="size-women9">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label for="color-women9">Color:</label>
+                        <select id="color-women9">
+                            <option value="Blue">Blue</option>
+                            <option value="White">White</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart('Love sea T-Shirt', 18, 'women-shirt9.jpg', document.getElementById('size-women9').value, document.getElementById('color-women9').value);scrollToOrderSummary();">Add to Cart</button>
+                </div>
+
+            </div>
+        </div>
+
+        
+
+        <!-- Men's T-Shirts -->
+        <div class="product-category" id="men-tshirts">
+            <h2>Men's T-Shirts</h2>
+            <div class="product-grid">
+                
+                <div class="product">
+                    <img src="images/men-shirt1.jpg" alt="Men Shirt 1">
+                    <h3>Wave Rider T-Shirt</h3>
+                    <p>$22.00</p>
+                    <div class="product-options">
+                        <label for="size-men1">Size:</label>
+                        <select id="size-men1">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label for="color-men1">Color:</label>
+                        <select id="color-men1">
+                            <option value="Blue">Blue</option>
+                            <option value="White">White</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart('Wave Rider T-Shirt', 22, 'men-shirt1.jpg', document.getElementById('size-men1').value, document.getElementById('color-men1').value);scrollToOrderSummary();">Add to Cart</button>
+                </div>
+                
+                <div class="product">
+                    <img src="images/men-shirt2.jpg" alt="Men Shirt 2">
+                    <h3>Blue Horizon T-Shirt</h3>
+                    <p>$21.00</p>
+                    <div class="product-options">
+                        <label for="size-men2">Size:</label>
+                        <select id="size-men2">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label for="color-men2">Color:</label>
+                        <select id="color-men2">
+                            <option value="Blue">Blue</option>
+                            <option value="White">White</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart('Blue Horizon T-Shirt', 21, 'men-shirt2.jpg', document.getElementById('size-men2').value, document.getElementById('color-men2').value);scrollToOrderSummary();">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="images/men-shirt3.jpg" alt="Men Shirt 3">
+                    <h3>Ocean Conservation T-Shirt</h3>
+                    <p>$22.00</p>
+                    <div class="product-options">
+                        <label for="size-men3">Size:</label>
+                        <select id="size-men3">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label for="color-men3">Color:</label>
+                        <select id="color-men3">
+                            <option value="Blue">Blue</option>
+                            <option value="White">White</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart('Ocean Conservation T-Shirt', 22, 'men-shirt1.jpg', document.getElementById('size-men1').value, document.getElementById('color-men1').value);scrollToOrderSummary();">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="images/men-shirt4.jpg" alt="Men Shirt 4">
+                    <h3>Deep Sea Delight T-Shirt</h3>
+                    <p>$22.00</p>
+                    <div class="product-options">
+                        <label for="size-men4">Size:</label>
+                        <select id="size-men4">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label for="color-men4">Color:</label>
+                        <select id="color-men4">
+                            <option value="Blue">Blue</option>
+                            <option value="White">White</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart('Deep Sea Delight T-Shirt', 22, 'men-shirt4.jpg', document.getElementById('size-men4').value, document.getElementById('color-men4').value);scrollToOrderSummary();">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="images/men-shirt5.jpg" alt="Men Shirt 5">
+                    <h3>Marine Majesty T-Shirt</h3>
+                    <p>$22.00</p>
+                    <div class="product-options">
+                        <label for="size-men5">Size:</label>
+                        <select id="size-men5">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label for="color-men5">Color:</label>
+                        <select id="color-men5">
+                            <option value="Blue">Blue</option>
+                            <option value="White">White</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart('Marine Majesty T-Shirt', 22, 'men-shirt5.jpg', document.getElementById('size-men5').value, document.getElementById('color-men5').value);scrollToOrderSummary();">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="images/men-shirt6.jpg" alt="Men Shirt 6">
+                    <h3>Ocean Dreamer Tee</h3>
+                    <p>$22.00</p>
+                    <div class="product-options">
+                        <label for="size-men6">Size:</label>
+                        <select id="size-men6">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label for="color-men6">Color:</label>
+                        <select id="color-men6">
+                            <option value="Blue">Blue</option>
+                            <option value="White">White</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart('Ocean Dreamer Tee', 22, 'men-shirt6.jpg', document.getElementById('size-men6').value, document.getElementById('color-men6').value);scrollToOrderSummary();">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="images/men-shirt7.jpg" alt="Men Shirt 7">
+                    <h3>Marine Bliss Tee</h3>
+                    <p>$22.00</p>
+                    <div class="product-options">
+                        <label for="size-men7">Size:</label>
+                        <select id="size-men7">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label for="color-men7">Color:</label>
+                        <select id="color-men7">
+                            <option value="Blue">Blue</option>
+                            <option value="White">White</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart('Marine Bliss Tee', 22, 'men-shirt7.jpg', document.getElementById('size-men7').value, document.getElementById('color-men7').value);scrollToOrderSummary();">Add to Cart</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Children's T-Shirts -->
+        <div class="product-category" id="children-tshirts">
+            <h2>Children's T-Shirts</h2>
+            <div class="product-grid">
+                
+                <div class="product">
+                    <img src="images/children-shirt1.jpg" alt="Children Shirt 1">
+                    <h3>Ocean Kids T-Shirt</h3>
+                    <p>$15.00</p>
+                    <div class="product-options">
+                        <label for="size-children1">Size:</label>
+                        <select id="size-children1">
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                        <label for="color-children1">Color:</label>
+                        <select id="color-children1">
+                            <option value="Blue">Blue</option>
+                            <option value="White">White</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart('Children Ocean Kids T-Shirt', 15, 'children-shirt1.jpg', document.getElementById('size-children1').value, document.getElementById('color-children1').value);scrollToOrderSummary();">Add to Cart</button>
+                </div>
+                
+                <div class="product">
+                    <img src="images/children-shirt2.jpg" alt="Children Shirt 2">
+                    <h3>Save the Whales T-Shirt</h3>
+                    <p>$16.00</p>
+                    <div class="product-options">
+                        <label for="size-children2">Size:</label>
+                        <select id="size-children2">
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                        <label for="color-children2">Color:</label>
+                        <select id="color-children2">
+                            <option value="Blue">Blue</option>
+                            <option value="White">White</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart('Children Save the Whales T-Shirt', 16, 'children-shirt2.jpg', document.getElementById('size-children2').value, document.getElementById('color-children2').value);scrollToOrderSummary();">Add to Cart</button>
+                </div>
+                
+            </div>
+        </div>
+    
+
+        <!-- Slippers -->
+        <div class="product-category" id="Slippers">
+            <h2>Slippers</h2>
+            <div class="product-grid">
+
+                <div class="product">
+                    <img src="images/Slippers1.jpg" alt="Slippers">
+                    <h3>Blue ocean Slippers</h3>
+                    <p>$10.00</p>
+                    <div class="product-options">
+                        <label for="size-Slippers1">Size:</label>
+                        <select id="size-Slippers1">
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                        <label for="color-Slippers1">Color:</label>
+                        <select id="color-Slippers1">
+                            <option value="Blue">Blue</option>
+                            <option value="White">White</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart('Blue ocean Slippers', 10, 'Slippers1.jpg', document.getElementById('size-Slippers1').value, document.getElementById('color-Slippers1').value);scrollToOrderSummary();">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="images/Slippers2.jpg" alt="Slippers2">
+                    <h3>Save the Whales Slippers</h3>
+                    <p>$16.00</p>
+                    <div class="product-options">
+                        <label for="size-Slippers2">Size:</label>
+                        <select id="size-Slippers2">
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                        <label for="color-Slippers2">Color:</label>
+                        <select id="color-Slippers2">
+                            <option value="Blue">Blue</option>
+                            <option value="White">White</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart('Children Save the Whales Slippers', 16, 'Slippers2.jpg', document.getElementById('size-Slippers2').value, document.getElementById('color-Slippers2').value);scrollToOrderSummary();">Add to Cart</button>
+                </div>
+
+            </div>
+        </div>
+        
+
+   
+                
+                
+
+
+        <!-- Decorations -->
+        <div class="product-category" id="decorations">
+            <h2>Decorations</h2>
+            <div class="product-grid">
+                
+                <div class="product">
+                    <img src="images/decor1.jpg" alt="Decor 1">
+                    <h3>Crotchet</h3>
+                    <p>$12.00</p>
+                    <button onclick="addToCart('Crotchet', 12, 'decor1.jpg');scrollToOrderSummary();">Add to Cart</button>
+                </div>
+                
+                <div class="product">
+                    <img src="images/decor2.jpg" alt="Decor 2">
+                    <h3>Sea shells decor</h3>
+                    <p>$25.00</p>
+                    <button onclick="addToCart('Sea shells decor', 25, 'decor2.jpg');scrollToOrderSummary();">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="images/decor3.jpg" alt="Decor 3">
+                    <h3>Crotchet whale</h3>
+                    <p>$12.00</p>
+                    <button onclick="addToCart('Crotchet whale', 12, 'decor3.jpg');scrollToOrderSummary();">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="images/decor4.jpg" alt="Decor 4">
+                    <h3>Blue ocean rock</h3>
+                    <p>$12.00</p>
+                    <button onclick="addToCart('Blue ocean rock', 12, 'decor4.jpg');scrollToOrderSummary();">Add to Cart</button>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="product-category" id="bands">
+            <h2>Bands</h2>
+            <div class="product-grid">
+                
+                <div class="product">
+                    <img src="images/bands1.jpg" alt="bands 1">
+                    <h3>Ocean Band</h3>
+                    <p>$10.00</p>
+                    <button onclick="addToCart('Ocean Band', 10, 'bands1.jpg');scrollToOrderSummary();">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+
+        
+
+        <!-- Mugs -->
+        <div class="product-category" id="mugs">
+            <h2>Mugs</h2>
+            <div class="product-grid">
+                
+                <div class="product">
+                    <img src="images/mug1.jpg" alt="Mug 1">
+                    <h3>Ocean Waves Mug</h3>
+                    <p>$10.00</p>
+                    <button onclick="addToCart('Ocean Waves Mug', 10, 'mug1.jpg');scrollToOrderSummary();">Add to Cart</button>
+                </div>
+                
+                <div class="product">
+                    <img src="images/mug2.jpg" alt="Mug 2">
+                    <h3>Sea Life Mug</h3>
+                    <p>$12.00</p>
+                    <button onclick="addToCart('Sea Life Mug', 12, 'mug2.jpg');scrollToOrderSummary();">Add to Cart</button>
+                </div>
+                
+            </div>
+        </div>
+        </div>
+       
+    <div id="notification" class="notification"></div>
+
+
+
+    <div id="order-summary">
+        <div id="order-summary-heading">
+        <h2>Order Summary</h2>
+        </div>
+        <div id="cart-summary">
+            <p>No items in cart.</p>
+        </div>
+        <div id="checkout-btn">
+        <button onclick="checkout()">Checkout</button>
+        </div>
+    
+    </div>
+    
+    <section id="funds-usage">
+        <h2>How We Use Your Money</h2>
+        <p>Your purchase directly supports various initiatives aimed at protecting ocean life and preserving marine ecosystems. Here’s how your contributions help:</p>
+        <ul>
+            <li>Funding clean-up drives to remove plastic and other pollutants from the ocean.</li>
+            <li>Supporting research on marine life and ecosystems.</li>
+            <li>Promoting sustainable fishing practices.</li>
+            <li>Advocating for stronger ocean protection policies.</li>
+
+            <p>Thank you for helping us protect the ocean!</p>
+        </ul>
+    </section>
+    </div>
+
+    <footer>
+        <div class="student-name">
+            <p>Miuni Weerasinghe <br>
+                <span class = "role">Student 1</span>
+            </p>
+
+            
+        </div>
+        <div class="editor">
+            <a href="editor1.html"target="_blank">Editor</a>
+        </div>
+    </footer>
+    
+
+
+
+    <script src="shop.js"></script>
+</body>
+</html>

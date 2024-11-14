@@ -1,0 +1,70 @@
+/* Styling for the main heading (h1) */
+h1{
+    text-align:center;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 165px;
+    text-decoration: underline;
+    color:rgb(180, 206, 235);   
+    font-family: Arial, sans-serif;
+    padding-top: 100px;
+
+}
+
+/* Styling for the SVG element with id "sitemap" */
+#sitemap {
+    width: 100%;
+    height: auto;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* General styling for all nodes in the sitemap */
+.node {
+    fill: #3498db;
+    stroke: #2980b9;
+    stroke-width: 2;
+   
+}
+
+/* Specific styling for the home node */
+.node.home {
+    fill:#6dabf7;
+    stroke:#6dabf7;
+    text-align: left;
+    display: flex;
+    
+}
+
+/* Hover effect for all nodes */
+.node:hover {
+    fill: #154cf3;
+    cursor: pointer;
+}
+
+/* Styling for the branches connecting nodes */
+.branch {
+    stroke: #34495e;
+    stroke-width: 2;
+
+}
+
+/* Styling for text inside nodes */
+text {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+    fill: white;
+    pointer-events: none;
+}
+
+/* Specific fill color for various nodes */
+.home,.gallery,.shop,.profile,.feedback,.team,.sitemap,.content,.content1,.content2,
+.content3,.content4,.editors,.editor1,.editor2,.editor3,.editor4
+{ 
+    fill: #6dabf7;
+ }
+
+
+
+

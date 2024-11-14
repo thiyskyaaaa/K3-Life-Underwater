@@ -1,0 +1,145 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  #video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+  
+  .splash-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
+    color: #FFFFFF; /* White text */
+    font-family: Arial, Helvetica, sans-serif
+  }
+  
+  .content {
+    text-align: center;
+    margin-top: 20vh; /* Adjust as needed */
+    z-index: 1; /* Ensure content appears above video */
+  }
+  
+  .main-title {
+    font-size: 4em;
+    margin-bottom: 10px;
+
+  }
+  
+  .sustainable {
+    display: block;
+    font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #136cbf, #78b5e8);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  }
+  
+  .seas {
+    margin-left: 100px; /* Adjust spacing between "Sustainable" and "Seas" */
+    display: inline-block;
+    font-size: 50px;
+    font-weight: 600;
+  background-image: linear-gradient(to left, #136cbf, #78b5e8);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+ /* Adjust size of "Seas" */
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Optional: Slide down effect */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .mission {
+    color: #94c7f6;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-in-out 2s forwards;
+  }
+  
+  .footer {
+    text-align: left;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+  }
+  
+  .designers {
+    font-family: 'Petit Formal Script', cursive;;
+    align-content: right;
+    font-size:16px;
+    font-weight: bold;
+  }
+  
+  .names {
+    font-size: 14px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .names li {
+    color: antiquewhite;
+    font-size: 0.8em;
+    margin-top: 5px;
+    text-align: left; /* Align names starting letters */
+  position: relative; /* Required for positioning */
+  padding-left: 20px; /* Space for custom bullet point */
+
+  }
+  .names li:before {
+    content: "\2022"; /* Unicode character for bullet (•) */
+    color: #007BFF; /* Custom color for the bullet point */
+    font-size: 1.4em; /* Adjust size of the bullet point */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .loader {
+    margin-top: 30px;
+    margin-bottom: 100px;;
+  }
+  
+  .loader img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  /* Animation for the loader */
+  @keyframes slide {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .loader img {
+    animation: slide 2s linear infinite;
+  }
+  
+  
+  
